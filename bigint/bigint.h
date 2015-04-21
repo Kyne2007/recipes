@@ -6,7 +6,7 @@
 namespace Mouse {
     class bigint {
         friend std::ostream &operator<<(std::ostream &, const bigint &);
-        friend std::istream &operator>>(std::istream &, const bigint &);
+        friend std::istream &operator>>(std::istream &, bigint &);
         friend bool operator<(const bigint &lhs, const bigint &rhs);
         friend bool operator>(const bigint &lhs, const bigint &rhs);
         friend bool operator==(const bigint &lhs, const bigint &rhs);
